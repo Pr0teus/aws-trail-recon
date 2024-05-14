@@ -30,3 +30,10 @@ time trail-recon.py -d 1
 time trail-recon.sh -d 1
 32.66s user 16.37s system 34% cpu 2:21.75 total
 ```
+
+# To-do List
+[ ] - Better output format (eg: json, table).
+[ ] - Arguments to stay low profile (replace the useragent and other stuff)
+[ ] - Verify first if there is an SCP or if the credential has this permission(avoid getting denied)
+[ ] - Productionize the tool
+[ ] - Add tests for quality
