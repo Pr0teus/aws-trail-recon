@@ -13,6 +13,7 @@ AWS Trail Recon is an idea that came up during gohacking's offensive AWS securit
 2. Install the requirements
 3. Find any AWS Credential
 4. If the credential has the CloudTrail:LookUpEvents action you will get the results.
+5. trail-recon.py -d 1
 
 
 # How to use -- Bash version (slow)
@@ -21,3 +22,11 @@ AWS Trail Recon is an idea that came up during gohacking's offensive AWS securit
 or
 2. ./trail-recon.sh -p teste -d 1s
 
+## benchmark:
+Python version
+```bash
+time trail-recon.py -d 1
+10.02s user 13.48s system 34% cpu 1:07.50 total
+time trail-recon.sh -d 1
+32.66s user 16.37s system 34% cpu 2:21.75 total
+```
